@@ -54,4 +54,4 @@ where Movie_Name like '___%';
 select M.Movie_Name, M.IMDB_Rating, D.Director_Name
 from Movie M
          inner join Director D on M.Director_ID = D.Person_ID
-where D.Director_Name not like '___________%';
+where D.Director_Name not like '___________%'; 
