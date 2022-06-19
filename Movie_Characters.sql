@@ -1,4 +1,5 @@
 -- auto-generated definition
+use Movie_Info;
 create table Movie_Characters
 (
     Character_ID   int auto_increment
