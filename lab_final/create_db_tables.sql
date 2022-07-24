@@ -35,9 +35,8 @@ create table Book_Character_Relationship
 (
     Character_ID int null,
     Book_No      int null,
-    constraint Book_Character_Relationship__fk
-        foreign key (Book_No) references Book (Book_No),
-        foreign key (Character_ID) references Characters (Character_ID)
+    foreign key (Book_No) references Book (Book_No),
+    foreign key (Character_ID) references Characters (Character_ID)
 );
 
 create table Publisher
@@ -45,8 +44,7 @@ create table Publisher
     Publisher_ID   int auto_increment,
     Publisher_Name VARCHAR(100) not null,
     Country        VARCHAR(100) not null,
-    constraint Publisher_pk
-        primary key (Publisher_ID)
+    primary key (Publisher_ID)
 );
 
 
@@ -55,9 +53,8 @@ create table Author_Book_Relationship
 (
     Book_No int null,
     Author_ID      int null,
-    constraint Author_Book_Relationship__fk
-        foreign key (Book_No) references Book (Book_No),
-        foreign key (Author_ID) references Author (Author_ID)
+    foreign key (Book_No) references Book (Book_No),
+    foreign key (Author_ID) references Author (Author_ID)
 );
 
 -- insert data
@@ -80,7 +77,7 @@ values  (1, 'Shesher Kobita', 'Drama', 'Bangla'),
         (6, 'Hajar Bochor Dhore', 'Drama', 'Bangla'),
         (7, 'Borof Gola Nodi', 'Drama', 'Bangla'),
         (8, 'Shesh Bikeler Meye', 'Drama', 'Bangla'),
-        (9, 'Shonky Samagra', 'Science Fiction', 'Bangla'),
+        (9, 'Shonku Samagra', 'Science Fiction', 'Bangla'),
         (10, 'Golpo 101', 'Short Stories', 'Bangla'),
         (11, 'Hottyapuri', 'Detective', 'Bangla'),
         (12, 'Chinnomostar Ovishap', 'Detective', 'Bangla'),
